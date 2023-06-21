@@ -64,7 +64,7 @@
                 left: 50%;
                 top: 50%;
                 transform: translateX(-50%) translateY(-50%);
-                background: url("../../../img/sprites/sprite.svg#hexagon_big");
+                background: url("../../../img/hexagon_big/hexagon_big.svg");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -89,7 +89,7 @@
                 height: 2px;
                 top: 50%;
                 left: calc(100% + 18px);
-                background: url("../../../img/svg/dashed-line.svg");
+                background: url("/energy/dist/img/svg/dashed-line.svg");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 500px 2px;
