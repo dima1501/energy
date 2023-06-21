@@ -11,6 +11,5 @@
 .yarn/install-state.gz
 ehthumbs.db
 Thumbs.db
-_config.yml
 node_modules
 package-lock.json
