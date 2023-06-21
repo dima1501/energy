@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" preload href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <nav class="header__nav"><a class="header__link" href="#">Главная страница</a><a class="header__link" href="#">Автор</a><a class="header__link" href="#">Кабинет инвестора</a><a class="header__link" href="#">RU</a></nav>
+    </header>
+    <main>
+      <section>
+        <div class="welcome">
+          <div class="container">
+            <div class="welcome__inner"> 
+              <div class="welcome__news">
+                <div class="news-card">
+                  <div class="news-card__top"><a class="news-card__logo" href="#" aria-label="Логотип компании">
+                      <svg class="news-card__logo-pic">
+                        <use xlink:href="img/sprites/sprite.svg#icon-logo-pic"></use>
+                      </svg>
+                      <svg class="news-card__logo-name">
+                        <use xlink:href="img/sprites/sprite.svg#icon-logo-name"></use>
+                      </svg></a></div>
+                  <div class="news-card__preview">
+                    <div class="news-card__preview-label">06 Дек. 16:24</div>
+                    <picture class="news-card__preview-pic">
+                      <source type="image/webp" srcset="img/news-pic.webp">
+                      <source type="image/jpg" srcset="img/news-pic.jpg"><img alt="" srcset="img/news-pic.jpg" width="537" height="302">
+                    </picture>
+                  </div>
+                  <h3 class="news-card__title">Бизнес-встреча в Дубаи</h3>
+                  <div class="news-card__bottom">
+                    <div class="news-card__bottom-line"> 
+                      <div class="news-card__stat">
+                        <svg class="news-card__stat-icon">
+                          <use xlink:href="img/sprites/sprite.svg#icon-eye"></use>
+                        </svg>
+                        <div class="news-card__stat-value">18k</div>
+                      </div>
+                      <div class="news-card__stat">
+                        <svg class="news-card__stat-icon">
+                          <use xlink:href="img/sprites/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <div class="news-card__stat-value">3974</div>
+                      </div><a class="news-card__read" href="#">Читать ›</a>
+                    </div>
+                    <div class="news-card__bottom-line"><a class="news-card__bottom-link" href="#">Пред.</a>
+                      <div class="news-card__bottom-line-divider"></div><a class="news-card__bottom-link" href="#">Следующая ›</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="welcome__main">
+                <div class="welcome__decor">
+                  <div class="welcome__decor-shadow"></div>
+                  <picture class="welcome__decor-pic _visible js-welcome-pic">
+                    <source type="image/webp" srcset="img/welcome_1.webp">
+                    <source type="image/jpg" srcset="img/welcome_1.jpg"><img alt="" srcset="img/welcome_1.jpg">
+                  </picture>
+                  <picture class="welcome__decor-pic js-welcome-pic">
+                    <source type="image/webp" srcset="img/welcome_2.webp">
+                    <source type="image/jpg" srcset="img/welcome_2.jpg"><img alt="" srcset="img/welcome_2.jpg">
+                  </picture>
+                </div>
+                <div class="welcome__main-inner">
+                  <div class="welcome__main-content">
+                    <h1 class="welcome__title">W.E.T.E.R</h1>
+                    <h2 class="welcome__subtitle">Wind Energy Technology</br> Era Renewable</h2>
+                    <p class="welcome__note">Здание, способное обеспечить себя электрической энергией с помощью ветра</p>
+                  </div>
+                  <div class="welcome__main-bottom">
+                    <div class="playable">
+                      <div class="playable__btn">
+                        <div class="hexagon-btn _highlight"> 
+                          <svg class="hexagon-btn__icon">
+                            <use xlink:href="img/sprites/sprite.svg#icon-play"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="playable__content">
+                        <div class="playable__content-title">Видео-презентация проекта</div>
+                        <div class="playable__content-text">09:12</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="welcome__main-social">
+                    <div class="soc"> <a class="soc__item" href="#" aria-label="telegram link">
+                        <svg class="soc__item-icon">
+                          <use xlink:href="img/sprites/sprite.svg#icon-telegram"></use>
+                        </svg></a><a class="soc__item" href="#" aria-label="instagram link">
+                        <svg class="soc__item-icon">
+                          <use xlink:href="img/sprites/sprite.svg#icon-instagram"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section"> 
+        <div class="container">
+          <h2 class="section__title">Технология и инновации</h2>
+          <div class="section__content">
+            <div class="tech-preview">
+              <div class="tech-preview__pics">
+                <div class="tech-preview__item">
+                  <picture class="tech-preview__pic _first">
+                    <source type="image/webp" srcset="img/tech_wind.webp">
+                    <source type="image/jpg" srcset="img/tech_wind.png"><img alt="" srcset="img/tech_wind.png" width="328" height="324">
+                  </picture>
+                </div>
+                <div class="tech-preview__item">
+                  <picture class="tech-preview__pic _second">
+                    <source type="image/webp" srcset="img/tech_build.webp">
+                    <source type="image/jpg" srcset="img/tech_build.png"><img alt="" srcset="img/tech_build.png" width="266" height="570">
+                  </picture>
+                </div>
+              </div>
+              <div class="tech-preview__content">
+                <h3 class="tech-preview__name">Моделирование воздушного потока</h3>
+                <h3 class="tech-preview__name">Трехмерная визуализация</h3>
+              </div>
+            </div>
+            <div class="tech-slider"> 
+              <div class="tech-slider__btn">
+                <div class="hexagon-btn">
+                  <svg class="hexagon-btn__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon-finger"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="tech-slider__line"> </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section"> 
+        <div class="container">
+          <div class="steps"> 
+            <div class="steps__item"> <img class="steps__item-pic" src="img/sprites/sprite.svg#promo_1" alt="" width="240" height="224">
+              <p class="steps__item-text">Аэродинамические щиты избавляют возвращающуюся лопатку от сопротивления</p>
+            </div>
+            <div class="steps__item"> <img class="steps__item-pic" src="img/sprites/sprite.svg#promo_2" alt="" width="240" height="224">
+              <p class="steps__item-text">Здания концентрируют воздушный поток</p>
+            </div>
+            <div class="steps__item"> <img class="steps__item-pic" src="img/sprites/sprite.svg#promo_3" alt="" width="240" height="224">
+              <p class="steps__item-text">На статичной оси расположены независимые модули</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

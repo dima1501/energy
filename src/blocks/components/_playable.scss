@@ -1,0 +1,67 @@
+.playable {
+    display: flex;
+    align-items: center;
+
+    &__btn {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        flex-shrink: 0;
+        margin-right: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        @media #{$breakpoint-768} {
+            margin-right: 24px;
+        }
+    }
+
+    &__content {
+        &-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -0.05em;
+            color: #CECFDB;
+            margin-bottom: 4px;
+            letter-spacing: -0.043em;
+
+            @media #{$breakpoint-768} {
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            @media #{$breakpoint-1280} {
+                font-size: 38px;
+                margin-bottom: 4px;
+                line-height: 56px;
+            }
+
+            @media #{$breakpoint-1600} {
+                font-size: 48px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 48px;
+            letter-spacing: -0.043em;
+            color: #CECFDB;
+
+            @media #{$breakpoint-768} {
+                font-size: 22px;
+            }
+
+            @media #{$breakpoint-1280} {
+                font-size: 30px;
+            }
+
+            @media #{$breakpoint-1600} {
+                font-size: 40px;
+            }
+        }
+    }
+}

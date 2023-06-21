@@ -1,0 +1,28 @@
+section.section 
+    .container
+        h2.section__title Технология и инновации
+        .section__content
+            .tech-preview
+                .tech-preview__pics
+                    .tech-preview__item
+                        picture.tech-preview__pic._first
+                            source(type="image/webp" srcset="img/tech_wind.webp")
+                            source(type="image/jpg" srcset="img/tech_wind.png")
+                            img(alt="" srcset="img/tech_wind.png" width="328" height="324")
+
+                    .tech-preview__item
+                        picture.tech-preview__pic._second
+                            source(type="image/webp" srcset="img/tech_build.webp")
+                            source(type="image/jpg" srcset="img/tech_build.png")
+                            img(alt="" srcset="img/tech_build.png" width="266" height="570")
+                        
+                .tech-preview__content
+                    h3.tech-preview__name Моделирование воздушного потока
+                    h3.tech-preview__name Трехмерная визуализация
+            .tech-slider 
+                .tech-slider__btn
+                    .hexagon-btn
+                        svg.hexagon-btn__icon
+                            use(xlink:href="img/sprites/sprite.svg#icon-finger")
+                .tech-slider__line 
+

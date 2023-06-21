@@ -1,2 +1,6 @@
-@import "header/header";
-@import "footer/footer";
+@import 'header/_header';
+
+@import 'welcome/welcome.scss';
+@import 'news-card/news-card.scss';
+@import 'tech/tech';
+@import 'steps/steps';

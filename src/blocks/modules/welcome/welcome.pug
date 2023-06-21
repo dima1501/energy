@@ -1,0 +1,40 @@
+section
+    .welcome
+        .container
+            .welcome__inner 
+                .welcome__news
+                    include ../news-card/news-card
+                .welcome__main
+                    .welcome__decor
+                        .welcome__decor-shadow
+                        picture.welcome__decor-pic._visible.js-welcome-pic
+                            source(type="image/webp" srcset="img/welcome_1.webp")
+                            source(type="image/jpg" srcset="img/welcome_1.jpg")
+                            img(alt="" srcset="img/welcome_1.jpg")
+                        picture.welcome__decor-pic.js-welcome-pic
+                            source(type="image/webp" srcset="img/welcome_2.webp")
+                            source(type="image/jpg" srcset="img/welcome_2.jpg")
+                            img(alt="" srcset="img/welcome_2.jpg")
+                    .welcome__main-inner
+                        .welcome__main-content
+                            h1.welcome__title W.E.T.E.R
+                            h2.welcome__subtitle Wind Energy Technology</br> Era Renewable
+                            p.welcome__note Здание, способное обеспечить себя электрической энергией с помощью ветра
+                        .welcome__main-bottom
+                            .playable
+                                .playable__btn
+                                    .hexagon-btn._highlight 
+                                        svg.hexagon-btn__icon
+                                            use(xlink:href="img/sprites/sprite.svg#icon-play")
+                                .playable__content
+                                    .playable__content-title Видео-презентация проекта
+                                    .playable__content-text 09:12
+
+                        .welcome__main-social
+                            .soc 
+                                a(href="#" aria-label="telegram link").soc__item
+                                    svg.soc__item-icon
+                                        use(xlink:href="img/sprites/sprite.svg#icon-telegram")
+                                a(href="#" aria-label="instagram link").soc__item
+                                    svg.soc__item-icon
+                                        use(xlink:href="img/sprites/sprite.svg#icon-instagram")

@@ -1,0 +1,32 @@
+.news-card
+    .news-card__top
+        a(href="#" aria-label="Логотип компании").news-card__logo
+            svg.news-card__logo-pic
+                use(xlink:href="img/sprites/sprite.svg#icon-logo-pic")
+            svg.news-card__logo-name
+                use(xlink:href="img/sprites/sprite.svg#icon-logo-name")
+    .news-card__preview
+        .news-card__preview-label 06 Дек. 16:24
+
+        picture.news-card__preview-pic
+            source(type="image/webp" srcset="img/news-pic.webp")
+            source(type="image/jpg" srcset="img/news-pic.jpg")
+            img(alt="" srcset="img/news-pic.jpg" width="537" height="302")
+
+    h3.news-card__title Бизнес-встреча в Дубаи
+
+    .news-card__bottom
+        .news-card__bottom-line 
+            .news-card__stat
+                svg.news-card__stat-icon
+                    use(xlink:href="img/sprites/sprite.svg#icon-eye")
+                .news-card__stat-value 18k
+            .news-card__stat
+                svg.news-card__stat-icon
+                    use(xlink:href="img/sprites/sprite.svg#icon-heart")
+                .news-card__stat-value 3974
+            a.news-card__read(href="#") Читать ›
+        .news-card__bottom-line
+            a.news-card__bottom-link(href="#") Пред.
+            .news-card__bottom-line-divider
+            a.news-card__bottom-link(href="#") Следующая ›

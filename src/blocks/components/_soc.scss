@@ -1,0 +1,40 @@
+.soc {
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 60px;
+        margin-bottom: 10px;
+        transition: opacity .3s;
+
+        @media #{$breakpoint-768} {
+            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+        }
+
+        @media #{$breakpoint-1600} {
+            margin-bottom: 40px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &-icon {
+            width: 40px;
+            height: 40px;
+
+            @media #{$breakpoint-768} {
+                width: 60px;
+                height: 60px;
+            }
+
+            @media #{$breakpoint-1600} {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
