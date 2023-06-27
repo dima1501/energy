@@ -136,11 +136,5 @@
         margin-left: auto;
         text-decoration: none;
         flex-shrink: 0;
-
-        @media #{$breakpoint-375} {}
-
-        @media #{$breakpoint-1280} {}
-
-        @media #{$breakpoint-1600} {}
     }
 }

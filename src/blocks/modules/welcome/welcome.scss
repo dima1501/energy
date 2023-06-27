@@ -48,7 +48,6 @@
             transition: opacity .45s, visibility .45s;
             visibility: hidden;
             opacity: 0;
-            text-align: right;
             width: 100vw;
             left: 50%;
             right: 50%;
@@ -166,7 +165,6 @@
         padding-top: clampy(20px, 40px);
         border-top: 1px solid $color-light-grey;
         font-weight: $font-weight-bold;
-        font-size: 24px;
         font-size: clampy(24px, 48px);
         line-height: 1.3;
         letter-spacing: -0.045em;
