@@ -1,39 +1,34 @@
 .news-card {
-    border: 1px solid #CECFDB;
+    border: 1px solid $color-light-grey;
     border-radius: 0px 0px 4px 4px;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+
+    @media #{$breakpoint-768} {
+        min-height: 570px;
+    }
+
+    @media #{$breakpoint-1600} {
+        min-height: 100%;
+    }
 
     &__logo {
         display: flex;
         align-items: center;
-        padding: 10px;
-
-        @media #{$breakpoint-768} {
-            padding: 10px 24px;
-        }
+        padding: 10px clampy(10px, 24px, 320px, 1280px);
 
         &-pic {
             width: 60px;
             height: 60px;
+            width: clampy(60px, 72px, 320px, 1440px);
+            height: clampy(60px, 72px, 320px, 1440px);
             flex-shrink: 0;
             margin-right: 8px;
-
-            @media #{$breakpoint-768} {
-                width: 72px;
-                height: 72px;
-            }
         }
 
         &-name {
-            width: 100px;
-            height: 30px;
-
-            @media #{$breakpoint-768} {
-                width: 127px;
-                height: 40px;
-            }
+            width: clampy(100px, 127px, 320px, 1440px);
+            height: clampy(30px, 40px, 320px, 1440px);
         }
     }
 
@@ -50,104 +45,61 @@
 
         &-label {
             position: absolute;
-            top: 18px;
-            left: 18px;
+            top: clampy(18px, 24px, 1280px);
+            left: clampy(18px, 24px, 1280px);
             background: rgba(0, 0, 2, 0.16);
             backdrop-filter: blur(8px);
             border-radius: 4px;
             padding: 8px 12px;
-            font-size: 20px;
+            font-size: clampy(20px, 40px, 1280px);
+            line-height: 1.3;
             letter-spacing: -0.05em;
-            color: #CECFDB;
-
-            @media #{$breakpoint-768} {
-                font-size: 30px;
-                line-height: 48px;
-                top: 24px;
-                left: 24px;
-            }
-
-            @media #{$breakpoint-1280} {
-                font-size: 40px;
-            }
+            color: $color-light-grey;
         }
     }
 
     &__title {
-        padding: 16px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 36px;
+        padding: clampy(16px, 24px, 1280px);
+        font-weight: $font-weight-bold;
+        font-size: clampy(24px, 48px, 1280px);
+        line-height: 1.3;
         letter-spacing: -0.05em;
-        color: #CECFDB;
-        min-height: 80px;
-
-        @media #{$breakpoint-768} {
-            padding: 24px;
-            font-size: 30px;
-            line-height: 40px;
-        }
-
-        @media #{$breakpoint-1280} {
-            font-size: 40px;
-            line-height: 50px;
-        }
-
-        @media #{$breakpoint-1600} {
-            font-size: 48px;
-            line-height: 56px;
-        }
+        color: $color-light-grey;
+        min-height: clampy(150px, 200px, 1280px);
     }
 
     &__bottom {
         margin-top: auto;
-        padding: 0 24px;
+        padding: 0 clampy(18px, 24px, 1280px);
 
         &-line {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 16px 0;
-            border-bottom: 2px solid rgba(#8C8EA5, 0.48);
-
-            @media #{$breakpoint-1280} {
-                padding: 24px 0;
-            }
+            padding: clampy(12px, 24px, 1280px) 0;
+            border-bottom: 2px solid rgba($color-dark-grey, 0.48);
 
             &:last-child {
                 margin-bottom: 0;
             }
 
             &-divider {
-                height: 30px;
+                height: clampy(30px, 48px, 320px, 375px);
                 width: 2px;
-                background-color: #8C8EA5;
+                background-color: $color-dark-grey;
                 opacity: 0.48;
-
-                @media #{$breakpoint-375} {
-                    height: 48px;
-                }
             }
         }
 
         &-link {
-            font-size: 18px;
-            line-height: 28px;
+            font-size: clampy(18px, 22px, 768px);
+            line-height: 1.2;
             letter-spacing: -0.05em;
-            color: #CECFDB;
+            color: $color-light-grey;
             text-decoration: none;
 
-            @media #{$breakpoint-375} {
-                font-size: 26px;
-                line-height: 48px;
-            }
-
-            @media #{$breakpoint-1280} {
-                font-size: 32px;
-            }
-
-            @media #{$breakpoint-1600} {
-                font-size: 40px;
+            @media #{$breakpoint-768} {
+                font-size: clampy(22px, 40px, 1280px);
             }
         }
     }
@@ -155,73 +107,40 @@
     &__stat {
         display: flex;
         align-items: center;
-        margin-right: 12px;
-
-        @media #{$breakpoint-375} {
-            margin-right: 24px;
-        }
+        margin-right: clampy(12px, 24px, 320px, 375px);
 
         &-icon {
-            width: 28px;
-            height: 28px;
-            margin-right: 4px;
-
-            @media #{$breakpoint-375} {
-                margin-right: 8px;
-            }
-
-            @media #{$breakpoint-425} {
-                width: 40px;
-                height: 40px;
-            }
+            width: clampy(28px, 40px);
+            height: clampy(28px, 40px);
+            margin-right: clampy(4px, 8px, 320px, 375px);
         }
 
         &-value {
-            font-size: 18px;
-            line-height: 36px;
+            font-size: clampy(16px, 22px, 320px, 375px);
+            line-height: 1.3;
             letter-spacing: -0.05em;
-            color: #CECFDB;
+            color: $color-light-grey;
 
-            @media #{$breakpoint-425} {
-                font-size: 26px;
-            }
-
-            @media #{$breakpoint-1024} {
-                font-size: 26px;
-            }
-
-            @media #{$breakpoint-1280} {
-                font-size: 30px;
-                line-height: 48px;
-            }
-
-            @media #{$breakpoint-1600} {
-                font-size: 40px;
+            @media #{$breakpoint-375} {
+                font-size: clampy(22px, 40px, 1280px);
             }
         }
     }
 
     &__read {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 40px;
+        font-weight: $font-weight-bold;
+        font-size: clampy(22px, 48px, 1280px);
+        line-height: 1.3;
         letter-spacing: -0.05em;
-        color: #CECFDB;
+        color: $color-light-grey;
         margin-left: auto;
         text-decoration: none;
         flex-shrink: 0;
 
-        @media #{$breakpoint-375} {
-            font-size: 26px;
-        }
+        @media #{$breakpoint-375} {}
 
-        @media #{$breakpoint-1280} {
-            font-size: 40px;
-            line-height: 56px;
-        }
+        @media #{$breakpoint-1280} {}
 
-        @media #{$breakpoint-1600} {
-            font-size: 48px;
-        }
+        @media #{$breakpoint-1600} {}
     }
 }

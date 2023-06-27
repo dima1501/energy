@@ -7,22 +7,9 @@
 
     &__item {
         position: relative;
-        margin-right: 80px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        @media #{$breakpoint-1440} {
-            margin-right: 100px;
-        }
-
-        @media #{$breakpoint-1900} {
-            margin-right: 213px;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
     }
 
     &__pics {
@@ -47,14 +34,9 @@
 
         &._first {
             transform: translateY(-5px) translateX(30px);
-            width: 80px;
+            width: clampy(80px, 328px, 320px, 1600px);
 
-            @media #{$breakpoint-375} {
-                width: 120px;
-            }
-
-            @media #{$breakpoint-768} {
-                width: auto;
+            @media #{$breakpoint-1024} {
                 transform: translateY(-8px) translateX(30px);
             }
 
@@ -68,18 +50,8 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                width: 130px;
-                height: 130px;
-
-                @media #{$breakpoint-375} {
-                    width: 170px;
-                    height: 170px;
-                }
-
-                @media #{$breakpoint-768} {
-                    width: 412px;
-                    height: 412px;
-                }
+                width: clampy(130px, 412px, 320px, 1600px);
+                height: clampy(130px, 412px, 320px, 1600px);
             }
 
             &:before {
@@ -92,25 +64,13 @@
                 background: url("/energy/dist/img/sprites/sprite.svg#dashed-line");
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 500px;
+                background-size: clampy(500px, 1000px, 320px, 1600px);
                 background-position: left center;
-
-                @media #{$breakpoint-768} {
-                    background-size: 830px;
-                }
             }
         }
 
         &._second {
-            width: 100px;
-
-            @media #{$breakpoint-375} {
-                width: 120px;
-            }
-
-            @media #{$breakpoint-768} {
-                width: auto;
-            }
+            width: clampy(100px, 266px, 320px, 1600px);
         }
     }
 
@@ -124,30 +84,24 @@
 
     &__name {
         margin-top: 35px;
-        font-weight: 700;
-        font-size: 14px;
+        font-weight: $font-weight-bold;
+        font-size: clampy(14px, 48px, 320px, 1600px);
         line-height: 1.3;
         letter-spacing: -0.05em;
-        color: #CECFDB;
+        color: $color-light-grey;
         text-align: center;
+        margin-right: 20px;
 
-        @media #{$breakpoint-375} {
-            font-size: 18px;
+        &._left {
+            text-align: left;
         }
 
-        @media #{$breakpoint-768} {
-            font-size: 30px;
-            line-height: 38px;
+        &._right {
+            text-align: right;
         }
 
-        @media #{$breakpoint-1440} {
-            font-size: 40px;
-            line-height: 48px;
-        }
-
-        @media #{$breakpoint-1900} {
-            font-size: 48px;
-            line-height: 56px;
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
@@ -181,7 +135,7 @@
     &__line {
         height: 12px;
         width: 100%;
-        background: #0F1B27;
+        background: $color-light-black;
         border-radius: 4px;
     }
 }
